@@ -17,9 +17,10 @@
   padding: 5px 10px;
   border-radius: 5px;
   border: none;
+ 
 }
 .search button {
-  padding-left: 10px;
+  
   padding: 5px 15px;
   border-radius: 5px;
   border: none;
@@ -76,12 +77,13 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      padding-left: 80px;
+      
     }
      .netflixlogo img {
-      width: 90px;
+      width: 80px;
       transition: transform 0.2s;
-      border-radius: 20px;
+      height: 60px;
+      
       
     }
     .netflixlogo:hover img{
@@ -91,11 +93,12 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      padding-left: 120px;
+      
     }
     .primelogo img {
-      height: 120px;
+      height: 60px;
       transition: transform 0.2s;
+      width: 100px;
       
     }
     .primelogo:hover img{
@@ -105,7 +108,7 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      padding-left: 100px;
+      
       
     }
     .hotstarlogo img {
@@ -123,12 +126,12 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      padding-left: 90px;
+     
     }
     .ahalogo img {
-      width: 90px;
+      width: 60px;
       transition: transform 0.2s;
-      border-radius: 20px;
+      height: 50px;
       
     }
     .ahalogo:hover img{
@@ -263,19 +266,33 @@
     .applelogo:hover img{
       transform: scale(1.1)
     }
-    .line1{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
+    
+    .line2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
-    }
-    .line2{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 40px;
+.line2 > button {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  overflow: hidden; /* prevents expanding outside */
+}
 
-    }
+.line2 > button:hover {
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0 0 10px 5px orange;
+}
+
+.line2 > button img {
+  height: 50px;
+  object-fit: contain;
+}
+
     .line3{
       display: flex;
       flex-direction: row;
@@ -323,12 +340,12 @@
   <div class="line2">
     <button class="youtubelogo" onclick="window.open('https://www.youtube.com', '_blank')"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="YouTube" ><p style="background-color: #fbfafa;border-radius: 12px"><b>YOUTUBE</b></p></button>
 
-    <button class="netflixlogo" onclick="window.open('https://www.netflix.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg" alt="netflix" height="80"><p style="background-color: #fbfafa;border-radius: 12px"><b>NETFLIX</b></p></button>
-    <button class="primelogo" onclick="window.open('https://www.primevideo.com', '_blank')"><img src="https://img.icons8.com/?size=160&id=L1NUuohARX1j&format=png" alt="Prime Video Logo"><p style="background-color: #fbfafa;border-radius: 12px" ><b>PRIME VIDEO</b></p></button>
+    <button class="netflixlogo" onclick="window.open('https://www.netflix.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/500px-Netflix_2015_logo.svg.png" alt="netflix" height="80"><p style="background-color: #fbfafa;border-radius: 12px"><b>NETFLIX</b></p></button>
+    <button class="primelogo" onclick="window.open('https://www.primevideo.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Prime_Video_logo_%282024%29.svg/500px-Prime_Video_logo_%282024%29.svg.png" alt="Prime Video Logo"><p style="background-color: #fbfafa;border-radius: 12px" ><b>PRIME VIDEO</b></p></button>
 
     <button class="hotstarlogo" onclick="window.open('https://www.jiohotstar.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/JioHotstar_2025.png" alt="jiohotstar"><p style="background-color: #fbfafa;border-radius: 12px"><b>HOTSTAR</b></p></button>
 
-    <button class="ahalogo" onclick="window.open('https://www.aha.video', '_blank')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJPcobC2dkeB9ikqGDm-6ZrV-7NW8QvlyFg&s" alt="aha" height="80" width="80"><p style="background-color: #fbfafa;border-radius: 12px" ><b>AHA</b></p></button>
+    <button class="ahalogo" onclick="window.open('https://www.aha.video', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Aha_%28streaming_service.svg/330px-Aha_%28streaming_service.svg.png" alt="aha" height="80" width="80"><p style="background-color: #fbfafa;border-radius: 12px" ><b>AHA</b></p></button>
     </div>
     <br>
     <br>
@@ -352,7 +369,7 @@
     <hr class="stline">
 <br>
 <br>
-     <div class="line3">
+     <div class="line2">
     <button class="mxlogo" onclick="window.open('https://www.mxplayer.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Final_logo_of_app.jpg/500px-Final_logo_of_app.jpg" alt="mxplayer" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>MX player</b></p></button>
 
     <button class="crunchylogo" onclick="window.open('https://www.crunchyroll.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Crunchyroll_2024_stacked.svg/500px-Crunchyroll_2024_stacked.svg.png" alt="mxplayer" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>CRUNCHY ROLL</b></p></button>
