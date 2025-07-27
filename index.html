@@ -3,57 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shadow Button Example</title>
+  <title>Tarun's all in one zone</title>
   <style>
-    #div1 {
-      color: rgb(225, 126, 126);
-      background-color: rgb(44, 44, 39);
-      border-radius: 10px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      padding: 0 20px;
+   body {
+  background-color:black ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
     }
-    #logo{
-      color: orange;
-      font-size: 25px;
-      margin-right: auto;
-    }
-    .upper {
-      color: aliceblue;
-      text-decoration: none;
-      display: flex;
-      gap: 40px;
-    }
-    h2 {
-      display: inline;
-      color: rgb(214, 214, 224);
-      background-color: rgb(27, 76, 89);
-      border-radius: 10px;
-    }
-    .youtubelogo {
-      cursor: pointer;
-      border: none;
-      background: transparent;
-      padding: 0;
-    }
-     .youtubelogo img {
-      width: 90px;
-      transition: transform 0.2s;
-    }
-    .youtubelogo:hover img{
-      transform: scale(1.1)
-    }
+
+
+  input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.search button {
+  padding-left: 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.search button:hover {
+  background-color: rgb(255, 165, 0);
+}
+
+#div1 {
+  color: rgb(225, 126, 126);
+  background-color: rgb(44, 44, 39);
+  border-radius: 10px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  }
+  #logo{
+  color: orange;
+  font-size: 25px;
+  padding-right: auto;
+  }
+  .upper {
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  gap: 40px;
+  }
+  h2 {
+  display: inline;
+  color: rgb(59, 59, 63);
+  border-radius: 10px;
+  padding-left: 520px;
+  }
+  .youtubelogo {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  padding: 0;
+  }
+  .youtubelogo img {
+  width: 90px;
+  transition: transform 0.2s;
+  }
+  .youtubelogo:hover img{
+  transform: scale(1.1)
+  }
     .netflixlogo {
       cursor: pointer;
       border: none;
       background: transparent;
-      margin-left: 110px;
+      padding-left: 80px;
     }
      .netflixlogo img {
       width: 90px;
       transition: transform 0.2s;
+      border-radius: 20px;
       
     }
     .netflixlogo:hover img{
@@ -63,10 +91,10 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      margin-left: 120px;
+      padding-left: 120px;
     }
     .primelogo img {
-      width: 90px;
+      height: 120px;
       transition: transform 0.2s;
       
     }
@@ -77,12 +105,16 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      margin-left: 140px;
+      padding-left: 100px;
+      
     }
     .hotstarlogo img {
       width: 90px;
       transition: transform 0.2s;
-      
+      height:60px;
+      width:140px;
+      background-color: antiquewhite;
+      border-radius: 10px;
     }
     .hotstarlogo:hover img{
       transform: scale(1.1)
@@ -91,29 +123,183 @@
       cursor: pointer;
       border: none;
       background: transparent;
-      margin-left: 90px;
+      padding-left: 90px;
     }
     .ahalogo img {
       width: 90px;
       transition: transform 0.2s;
+      border-radius: 20px;
       
     }
     .ahalogo:hover img{
       transform: scale(1.1)
     }
+    .sonylogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .sonylogo img {
+      width: 90px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+      
+    }
+    .sonylogo:hover img{
+      transform: scale(1.1)
+    }
+    .zeelogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .zeelogo img {
+      width: 90px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+      
+    }
+    .zeelogo:hover img{
+      transform: scale(1.1)
+    }
+    .vootlogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .vootlogo img {
+      width: 90px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+      
+    }
+    .vootlogo:hover img{
+      transform: scale(1.1)
+    }
+    .eroslogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .eroslogo img {
+      width: 90px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+      
+    }
+    .eroslogo:hover img{
+      transform: scale(1.1)
+    }
+    .sunlogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .sunlogo img {
+      width: 90px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+      
+    }
+    .sunlogo:hover img{
+      transform: scale(1.1)
+    }
+    .mxlogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .mxlogo img {
+      width: 90px;
+      height: 80px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+
+      
+    }
+    .mxlogo:hover img{
+      transform: scale(1.1)
+    }
+    .crunchylogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .crunchylogo img {
+      width: 110px;
+      height: 80px;
+      transition: transform 0.2s;
+      
+
+      
+    }
+    .crunchylogo:hover img{
+      transform: scale(1.1)
+    }
+    .applelogo{
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding-left: 90px;
+    }
+    .applelogo img {
+      width: 150px;
+      height: 60px;
+      transition: transform 0.2s;
+      border-radius: 20px;
+      background-color: antiquewhite;
+      border-radius: 10px;
+
+
+      
+    }
+    .applelogo:hover img{
+      transform: scale(1.1)
+    }
     .line1{
       display: flex;
-      margin-left: 150px;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+    .line2{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+
+    }
+    .line3{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
     }
     .items{
+      font-size: 15px;
       display: flex;
-      gap: 120px;
-      margin-left: 150px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px
     }
-    .stream{
-      padding: 0 20px;
-      margin-left: 480px;
-    }
+    .stline {
+  border: none;
+  height: 5px;
+  background:orange;
+}
+.stream{
+  color: antiquewhite;
+}
+
+    
+    
   </style>
 </head>
 <body>
@@ -134,24 +320,44 @@
   <br>
   <br>
   <br>
-  <div class="line1">
-    <button class="youtubelogo" onclick="window.open('https://www.youtube.com', '_blank')"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="YouTube"></button>
+  <div class="line2">
+    <button class="youtubelogo" onclick="window.open('https://www.youtube.com', '_blank')"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="YouTube" ><p style="background-color: #fbfafa;border-radius: 12px"><b>YOUTUBE</b></p></button>
 
-    <button class="netflixlogo" onclick="window.open('https://www.netflix.com', '_blank')"><img src="C:\Users\91918\Downloads\netflix-logo-10267.png" alt="netflix" height="80"></button>
-    <button class="primelogo" onclick="window.open('https://www.primevideo.com', '_blank')"><img src="C:\Users\91918\Downloads\icons8-amazon-prime-96.png" alt="prime"></button>
-    <button class="hotstarlogo" onclick="window.open('https://www.jiohotstar.com', '_blank')"><img src="C:\Users\91918\Downloads\jiohotstar-app-logo-icon.webp" alt="hotstar" height="90" width="100"></button>
-    <button class="ahalogo" onclick="window.open('https://www.aha.com', '_blank')"><img src="C:\Users\91918\Downloads\aha-tv-logo.webp" alt="ahaa" height="80" width="80"></button>
-    </div>
+    <button class="netflixlogo" onclick="window.open('https://www.netflix.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg" alt="netflix" height="80"><p style="background-color: #fbfafa;border-radius: 12px"><b>NETFLIX</b></p></button>
+    <button class="primelogo" onclick="window.open('https://www.primevideo.com', '_blank')"><img src="https://img.icons8.com/?size=160&id=L1NUuohARX1j&format=png" alt="Prime Video Logo"><p style="background-color: #fbfafa;border-radius: 12px" ><b>PRIME VIDEO</b></p></button>
 
- 
-    <div class="line1names">
-    <h3 class="items"><a href="https://www.youtube.com/"><i>YOUTUBE</i> 
-    <a href="https://www.netflix.com/"><i>NETFLIX</i></a>
-    <a href="https://www.primevideo.com/"><i>PRIMEVIDEO</i>
-    <a href="https://www.jiohotstar.com/"><i>JIOHOTSTAR</i>
-    <a href="https://www.ahaa.com/"><i>AHA</i>
-    </h3>
+    <button class="hotstarlogo" onclick="window.open('https://www.jiohotstar.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/JioHotstar_2025.png" alt="jiohotstar"><p style="background-color: #fbfafa;border-radius: 12px"><b>HOTSTAR</b></p></button>
+
+    <button class="ahalogo" onclick="window.open('https://www.aha.video', '_blank')"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJPcobC2dkeB9ikqGDm-6ZrV-7NW8QvlyFg&s" alt="aha" height="80" width="80"><p style="background-color: #fbfafa;border-radius: 12px" ><b>AHA</b></p></button>
     </div>
-  
+    <br>
+    <br>
+    <hr class="stline">
+    <br>
+    <br>
+
+    <div class="line2">
+    <button class="sonylogo" onclick="window.open('https://www.sonyliv.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/SonyLIV_2020.png?20250612061919" alt="sonyliv" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>SONY LIV</b></p></button>
+
+    <button class="zeelogo" onclick="window.open('https://www.zee5.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Zee5-official-logo.jpeg?20200410171219" alt="zee5" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>ZEE5</b></p></button>
+    
+     <button class="vootlogo" onclick="window.open('https://www.voot.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Voot_website_logo.png?20171225073046" alt="voot" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>VOOT</b></p></button>
+
+     <button class="eroslogo" onclick="window.open('https://www.erosnow.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/ErosNow_Stag_New_18_White.jpg/1200px-ErosNow_Stag_New_18_White.jpg?20181012071722" alt="erosnow" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>EROS NOW</b></p></button>
+
+     <button class="sunlogo" onclick="window.open('https://www.sunnxt.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Sun_NXT_logo_small.png/280px-Sun_NXT_logo_small.png" alt="sunnext" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>SUN NXT</b></p></button>
+    </div>
+<br>
+<br>
+    <hr class="stline">
+<br>
+<br>
+     <div class="line3">
+    <button class="mxlogo" onclick="window.open('https://www.mxplayer.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Final_logo_of_app.jpg/500px-Final_logo_of_app.jpg" alt="mxplayer" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>MX player</b></p></button>
+
+    <button class="crunchylogo" onclick="window.open('https://www.crunchyroll.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Crunchyroll_2024_stacked.svg/500px-Crunchyroll_2024_stacked.svg.png" alt="mxplayer" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>CRUNCHY ROLL</b></p></button>
+
+    <button class="applelogo" onclick="window.open('https://tv.apple.com/in', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Apple_TV_Plus_Logo.svg/330px-Apple_TV_Plus_Logo.svg.png" alt="appletv" ><p style="background-color: #fbfafa;border-radius: 12px" ><b>Apple TV+</b></p></button>
+     </div> 
 </body>
 </html>
