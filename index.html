@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tarun's all in one zone</title>
   <style>
-   body {
+  body {
   background-color:black ;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,7 +25,7 @@
   border-radius: 5px;
   border: none;
   background-color: orange;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
   transition: 0.2s;
 }
@@ -33,6 +33,7 @@
   
   box-shadow: 0 0 20px 8px orange;
   background-color: rgba(255, 165, 0, 0.1);
+  color: aliceblue;
   transition: 0.3s ease;
   transform: scale(1.1);
 }
@@ -124,7 +125,24 @@
   color: antiquewhite;
   box-shadow: orange;
 }
-
+.navigation{
+  display: flex;
+  justify-content: center;
+}
+.navigation> button{
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color:transparent;
+  color: aliceblue;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navigation> button:hover{
+ transform:scale(1.05);
+  background-color: orange;
+  color: rgb(0, 0, 0);
+   box-shadow: 0 0 20px 8px rgb(255, 255, 255);
+}
     
     
   </style>
@@ -148,9 +166,10 @@
   <br>
   <br>
   <div class="line2">
-    <button  onclick="window.open('https://www.youtube.com', '_blank')"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="YouTube" ><p "><b>YOUTUBE</b></p></button>
+    <button  onclick="window.open('https://www.youtube.com', '_blank')"><img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png" alt="YouTube" ><p ><b>YOUTUBE</b></p></button>
 
     <button  onclick="window.open('https://www.netflix.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/500px-Netflix_2015_logo.svg.png" alt="netflix" height="80"><p ><b>NETFLIX</b></p></button>
+
     <button  onclick="window.open('https://www.primevideo.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Prime_Video_logo_%282024%29.svg/500px-Prime_Video_logo_%282024%29.svg.png" alt="Prime Video Logo"><p  ><b>PRIME VIDEO</b></p></button>
 
   <button  onclick="window.open('https://www.sonyliv.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/SonyLIV_2020.png?20250612061919" alt="sonyliv" ><p  ><b>SONY LIV</b></p></button>
@@ -189,5 +208,18 @@
 
     <button  onclick="window.open('https://www.aha.video', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/Aha_%28streaming_service.svg/330px-Aha_%28streaming_service.svg.png" alt="aha" height="80" width="80"><p  ><b>AHA</b></p></button>
      </div> 
+     <br>
+     <br>
+     <br>
+     <br>
+
+     <div class="navigation">
+  <button onclick="window.open('https://tarun123git.github.io/website/page1.html','_blank')"><b><i>SOCIAL MEDIA APPS</i></b></button>
+</div>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
 </body>
 </html>
