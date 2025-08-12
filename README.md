@@ -1,8 +1,8 @@
 🌐 Tarun’s All in One Hub
 
-Tarun’s All in One Hub is a personal portfolio and multi-purpose web hub designed to showcase my projects, provide quick 
+Tarun’s All in One Hub is a personal portfolio and multi-purpose web hub designed to showcase my projects,
 
-access to useful resources, and act as a single point of contact for my online presence.
+provide quick access to useful resources, and act as a single point of contact for my online presence.
 
 📌 Features
 
