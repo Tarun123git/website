@@ -3,193 +3,228 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarun's all in one zone</title>
- <style>
-   body {
-  background-color:black ;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  <title>Tarun's All-in-One Zone</title>
+  <style>
+    body {
+      background-color: black;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
+    /* Header */
+    #div1 {
+      color: rgb(225, 126, 126);
+      background-color: rgb(44, 44, 39);
+      border-radius: 10px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      flex-wrap: wrap; /* makes header responsive */
+    }
 
-  input {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
- 
-}
-.search button {
-  
-  padding: 5px 15px;
-  border-radius: 5px;
-  border: none;
-  background-color: orange;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  transition: 0.2s;
-}
-.search button:hover {
-  
-  box-shadow: 0 0 20px 8px orange;
-  background-color: rgba(255, 165, 0, 0.1);
-  color: aliceblue;
-  transition: 0.3s ease;
-  transform: scale(1.1);
-}
+    #logo > button {
+      color: orange;
+      font-size: 20px;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-#div1 {
-  color: rgb(225, 126, 126);
-  background-color: rgb(44, 44, 39);
-  border-radius: 10px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0 20px;
-  }
-  #logo>button{
-  color: orange;
-  font-size: 25px;
-  background: none;
-  border: none;
-  outline: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font-family: inherit; 
-  }
-  .upper {
-  color: aliceblue;
-  text-decoration: none;
-  display: flex;
-  gap: 40px;
-  }
-  h2 {
-  display: inline;
-  color: rgb(59, 59, 63);
-  border-radius: 10px;
-  padding-left: 520px;
-  }
-  
-    .line2 {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
+    .upper {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: aliceblue;
+    }
 
-.line2 > button {
-  flex: 1;
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  background-color: transparent;
-}
+    .upper a {
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-.line2 > button:hover {
-  box-shadow: 0 0 20px 8px orange;
-  background-color: rgba(255, 165, 0, 0.1);
-  transition: 0.3s ease;
-  transform: scale(1.1);
-}
+    .upper a:hover {
+      color: orange;
+      transform: scale(1.1);
+    }
 
-.line2 > button img {
-  height: 60px;
-  width: auto;
-  object-fit: contain;
+    /* Search bar */
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 5px;
+    }
 
-  background-color: transparent;
-}
+    input {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+    }
 
-.line2 > button p {
-  color: white;
-  margin-top: 5px;
-  padding: 5px 10px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: transparent;
-}
+    .search button {
+      padding: 5px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: orange;
+      color: black;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
 
-.line2 > button:hover p {
-  background-color: orange;
-  color: black;
-  transform: scale(1.05);
-}
-.line2 > button img:hover 
-{
-  transition: 0.3s ease;
-  transform: scale(1.5);
-}
+    .search button:hover {
+      box-shadow: 0 0 20px 8px orange;
+      background-color: rgba(255, 165, 0, 0.1);
+      color: aliceblue;
+      transform: scale(1.1);
+    }
+
+    /* Section titles */
+    h2 {
+      text-align: center;
+      color: orange;
+      font-size: 24px;
+      margin-top: 40px;
+    }
+
     .stline {
-  border: none;
-  height: 5px;
-  background:orange;
-}
-.social{
-  color: antiquewhite;
-  box-shadow: orange;
-}
+      border: none;
+      height: 5px;
+      background: orange;
+      margin: 40px 0;
+    }
 
-    
-    
+    /* Grid layout for social media buttons */
+    .line2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .line2 > button {
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: 0.3s ease;
+    }
+
+    .line2 > button:hover {
+      box-shadow: 0 0 20px 8px orange;
+      background-color: rgba(255, 165, 0, 0.1);
+      transform: scale(1.05);
+    }
+
+    .line2 > button img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+      transition: 0.3s ease;
+    }
+
+    .line2 > button:hover img {
+      transform: scale(1.2);
+    }
+
+    .line2 > button p {
+      color: white;
+      margin-top: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .line2 > button:hover p {
+      color: orange;
+      transform: scale(1.05);
+    }
+
+    /* Media queries */
+    @media (max-width: 768px) {
+      #div1 {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .upper {
+        gap: 15px;
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .line2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on small screens */
+      }
+
+      .line2 > button img {
+        height: 50px;
+      }
+
+      .line2 > button p {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <div id="div1">
     <div id="logo">
-    <button  onclick="window.open('https://tarun123git.github.io/website/', '_self')"><p>TARUN's all in one zone</p></button></div> 
+      <button onclick="window.open('https://tarun123git.github.io/website/', '_self')">TARUN's Zone</button>
+    </div>
     <div class="upper">
-    <a>Account</a>
-    <a>MyAPPS</a>
-    <a>Contact Us</a>
+      <a>Account</a>
+      <a>My Apps</a>
+      <a>Contact Us</a>
     </div>
-    <input placeholder="Search">
-    <div class="search"><button >SEARCH</button></div>
+    <div class="search">
+      <input placeholder="Search">
+      <button>SEARCH</button>
+    </div>
   </div>
-  <br>
-  <br>
-  <h2 class="social">SOCIAL MEDIA APPS</h2>
-  <br>
-  <br>
-  <br>
-  <br>
+
+  <!-- Social Media Apps -->
+  <h2>SOCIAL MEDIA APPS</h2>
   <div class="line2">
-    <button  onclick="window.open('https://www.instagram.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/330px-Instagram_logo_2022.svg.png" alt="instagram" ><p ><b>INSTAGRAM</b></p></button>
-    <button  onclick="window.open('https://www.facebook.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/640px-Facebook_icon_2013.svg.png" alt="facebook" ><p ><b>FACEBOOK</b></p></button>
-    <button  onclick="window.open('https://www.twitter.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-twitter-48.png?raw=true" alt="twitter" ><p ><b>TWITTER</b></p></button>
-    <button  onclick="window.open('https://www.whatsapp.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png?20220228223904" alt="whatsapp" ><p ><b>WHATSAPP</b></p></button>
-    </div>
-    <br>
-    <br>
-    <hr class="stline">
-    <br>
-    <br>
+    <button onclick="window.open('https://www.instagram.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="instagram"><p>INSTAGRAM</p></button>
+    <button onclick="window.open('https://www.facebook.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="facebook"><p>FACEBOOK</p></button>
+    <button onclick="window.open('https://www.twitter.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-twitter-48.png?raw=true" alt="twitter"><p>TWITTER</p></button>
+    <button onclick="window.open('https://www.whatsapp.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp"><p>WHATSAPP</p></button>
+  </div>
 
-    <div class="line2">
-        <button  onclick="window.open('https://www.snapchat.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Snapchat_logo.svg/250px-Snapchat_logo.svg.png" alt="snapchat" ><p ><b>SNAPCHAT</b></p></button>
+  <hr class="stline">
 
-        <button  onclick="window.open('https://www.telegram.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/330px-Telegram_2019_Logo.svg.png" alt="telegram" ><p ><b>TELEGRAM</b></p></button>
+  <div class="line2">
+    <button onclick="window.open('https://www.snapchat.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg" alt="snapchat"><p>SNAPCHAT</p></button>
+    <button onclick="window.open('https://telegram.org', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="telegram"><p>TELEGRAM</p></button>
+    <button onclick="window.open('https://www.threads.net', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Threads_%28app%29.svg" alt="threads"><p>THREADS</p></button>
+    <button onclick="window.open('https://www.linkedin.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin"><p>LINKEDIN</p></button>
+  </div>
 
-        <button  onclick="window.open('https://www.threads.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Threads_%28app%29.svg/330px-Threads_%28app%29.svg.png" alt="threads" ><p ><b>THREADS</b></p></button>
+  <hr class="stline">
 
-        <button  onclick="window.open('https://www.linkedin.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png" alt="linkedin" ><p ><b>LinkedIN</b></p></button>
-    
-    </div>
-<br>
-<br>
-    <hr class="stline">
-<br>
-<br>
-    <div class="line2">
-    <button  onclick="window.open('https://www.pinterest.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png?20160129083321" alt="pinterest" ><p ><b>PINTEREST</b></p></button>
+  <div class="line2">
+    <button onclick="window.open('https://www.pinterest.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="pinterest"><p>PINTEREST</p></button>
+    <button onclick="window.open('https://www.reddit.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-reddit-48.png?raw=true" alt="reddit"><p>REDDIT</p></button>
+    <button onclick="window.open('https://discord.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-discord-48.png?raw=true" alt="discord"><p>DISCORD</p></button>
+    <button onclick="window.open('https://www.quora.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-quora-48.png?raw=true" alt="quora"><p>QUORA</p></button>
+  </div>
 
-    <button  onclick="window.open('https://www.reddit.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-reddit-48.png?raw=true" alt="reddit" ><p ><b>REDDIT</b></p></button>
-
-    <button  onclick="window.open('https://www.discord.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-discord-48.png?raw=true" alt="discord" ><p ><b>DISCORD</b></p></button>
-
-    <button  onclick="window.open('https://www.quora.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-quora-48.png?raw=true" alt="quora" ><p ><b>QUORA</b></p></button>
-    
 </body>
 </html>
