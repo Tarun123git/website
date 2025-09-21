@@ -90,46 +90,50 @@
       margin-bottom: 15px;
     }
 
-    .line2 {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 25px;
+    /* Responsive Grid (same as page1) */
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-bottom: 30px;
     }
 
-    .line2 button {
-      flex: 1 1 140px;
-      max-width: 180px;
-      padding: 10px;
+    .app-card {
+      background: #111;
+      border: 2px solid #444;
       border-radius: 10px;
-      cursor: pointer;
-      background-color: transparent;
-      transition: 0.3s;
+      padding: 20px;
       text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      width: 100%;
+      max-width: 180px;
+      cursor: pointer;
     }
 
-    .line2 button:hover {
-      box-shadow: 0 0 20px 8px orange;
-      background-color: rgba(255, 165, 0, 0.1);
+    .app-card:hover {
       transform: scale(1.05);
+      box-shadow: 0 0 20px 5px orange;
     }
 
-    .line2 img {
-      max-width: 100%;
-      height: auto;
+    .app-card img {
+      width: 80px;
+      height: 80px;
       object-fit: contain;
+      margin-bottom: 10px;
     }
 
-    .line2 p {
-      margin-top: 5px;
+    .app-card p {
+      font-weight: bold;
+      margin: 0;
       color: white;
     }
 
-    .line2 button:hover p {
+    .app-card:hover p {
       background: orange;
       color: black;
-      border-radius: 10px;
+      border-radius: 8px;
+      padding: 3px;
     }
 
     hr.stline {
@@ -170,69 +174,69 @@
   <main>
     <section>
       <h2>Streaming Apps</h2>
-      <div class="line2">
-        <button onclick="window.open('https://www.youtube.com','_blank')">
+      <div class="app-grid">
+        <div class="app-card" onclick="window.open('https://www.youtube.com','_blank')">
           <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png">
-          <p><b>YOUTUBE</b></p>
-        </button>
-        <button onclick="window.open('https://www.netflix.com','_blank')">
+          <p>YOUTUBE</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.netflix.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
-          <p><b>NETFLIX</b></p>
-        </button>
-        <button onclick="window.open('https://www.primevideo.com','_blank')">
+          <p>NETFLIX</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.primevideo.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Prime_Video_logo_%282024%29.svg">
-          <p><b>PRIME VIDEO</b></p>
-        </button>
-        <button onclick="window.open('https://www.sonyliv.com','_blank')">
+          <p>PRIME VIDEO</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.sonyliv.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/SonyLIV_2020.png">
-          <p><b>SONY LIV</b></p>
-        </button>
+          <p>SONY LIV</p>
+        </div>
       </div>
     </section>
 
     <hr class="stline">
 
     <section>
-      <div class="line2">
-        <button onclick="window.open('https://www.zee5.com','_blank')">
+      <div class="app-grid">
+        <div class="app-card" onclick="window.open('https://www.zee5.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Zee5-official-logo.jpeg">
-          <p><b>ZEE5</b></p>
-        </button>
-        <button onclick="window.open('https://www.hotstar.com','_blank')">
+          <p>ZEE5</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.hotstar.com','_blank')">
           <img src="https://github.com/Tarun123git/logo/blob/main/56097ad6-88b3-471f-8106-a29e9d0e4462.png?raw=true">
-          <p><b>Disney+ Hotstar</b></p>
-        </button>
-        <button onclick="window.open('https://www.erosnow.com','_blank')">
+          <p>Disney+ Hotstar</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.erosnow.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/ErosNow_Stag_New_18_White.jpg">
-          <p><b>EROS NOW</b></p>
-        </button>
-        <button onclick="window.open('https://www.sunnxt.com','_blank')">
+          <p>EROS NOW</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.sunnxt.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Sun_NXT_logo_small.png">
-          <p><b>SUN NXT</b></p>
-        </button>
+          <p>SUN NXT</p>
+        </div>
       </div>
     </section>
 
     <hr class="stline">
 
     <section>
-      <div class="line2">
-        <button onclick="window.open('https://www.mxplayer.com','_blank')">
+      <div class="app-grid">
+        <div class="app-card" onclick="window.open('https://www.mxplayer.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Final_logo_of_app.jpg">
-          <p><b>MX PLAYER</b></p>
-        </button>
-        <button onclick="window.open('https://www.crunchyroll.com','_blank')">
+          <p>MX PLAYER</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.crunchyroll.com','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Crunchyroll_2024_stacked.svg">
-          <p><b>CRUNCHYROLL</b></p>
-        </button>
-        <button onclick="window.open('https://tv.apple.com/in','_blank')">
+          <p>CRUNCHYROLL</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://tv.apple.com/in','_blank')">
           <img src="https://github.com/Tarun123git/logo/blob/main/ChatGPT%20Image%20Jul%2028,%202025,%2005_43_40%20PM.png?raw=true">
-          <p><b>APPLE TV+</b></p>
-        </button>
-        <button onclick="window.open('https://www.aha.video','_blank')">
+          <p>APPLE TV+</p>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.aha.video','_blank')">
           <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Aha_%28streaming_service.svg">
-          <p><b>AHA</b></p>
-        </button>
+          <p>AHA</p>
+        </div>
       </div>
     </section>
   </main>
