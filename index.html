@@ -3,50 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tarun's all in one zone</title>
+  <title>Tarun's All in One Zone - Streaming Apps</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       background-color: black;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
       margin: 0;
       font-family: Arial, sans-serif;
+      color: white;
     }
 
-    /* Navbar */
-    #div1 {
-      color: rgb(225, 126, 126);
-      background-color: rgb(44, 44, 39);
-      border-radius: 10px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between; /* ✅ makes items space evenly */
-      padding: 0 15px;
-      flex-wrap: wrap; /* ✅ allows wrapping on mobile */
-    }
-
-    #logo {
+    /* Header + Navbar */
+    header {
+      background: #2c2c27;
       color: orange;
-      font-size: 1.2rem;
-      flex-shrink: 0; /* ✅ keeps logo visible */
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    .upper {
+    header h1 {
+      font-size: 1.2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+    }
+
+    nav a {
       color: aliceblue;
       text-decoration: none;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap; /* ✅ wrap links on small screens */
+      padding: 5px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
     }
 
-    input {
+    nav a:hover, nav a.active {
+      background: orange;
+      color: black;
+    }
+
+    /* Search bar */
+    .search {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .search input {
       padding: 5px 10px;
       border-radius: 5px;
       border: none;
-      flex: 1; /* ✅ makes input grow */
-      min-width: 120px;
+      min-width: 150px;
     }
 
     .search button {
@@ -54,7 +69,6 @@
       border-radius: 5px;
       border: none;
       background-color: orange;
-      color: black;
       cursor: pointer;
       transition: 0.2s;
     }
@@ -63,196 +77,168 @@
       box-shadow: 0 0 20px 8px orange;
       background-color: rgba(255, 165, 0, 0.1);
       color: aliceblue;
-      transform: scale(1.1);
+    }
+
+    /* Sections */
+    main {
+      padding: 20px;
+      text-align: center;
     }
 
     h2 {
-      text-align: center; /* ✅ instead of padding-left */
       color: orange;
-      margin: 20px 0;
+      margin-bottom: 15px;
     }
 
-    /* Streaming Apps Layout */
     .line2 {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 15px;
-      flex-wrap: wrap; /* ✅ allows buttons to move below each other */
-      padding: 10px;
+      margin-bottom: 25px;
     }
 
-    .line2 > button {
-      flex: 1 1 120px; /* ✅ flexible width */
+    .line2 button {
+      flex: 1 1 140px;
       max-width: 180px;
       padding: 10px;
-      text-align: center;
       border-radius: 10px;
       cursor: pointer;
       background-color: transparent;
-      transition: 0.3s ease;
+      transition: 0.3s;
+      text-align: center;
     }
 
-    .line2 > button:hover {
+    .line2 button:hover {
       box-shadow: 0 0 20px 8px orange;
       background-color: rgba(255, 165, 0, 0.1);
       transform: scale(1.05);
     }
 
-    .line2 > button img {
-      max-width: 100%; /* ✅ scales images */
+    .line2 img {
+      max-width: 100%;
       height: auto;
       object-fit: contain;
     }
 
-    .line2 > button p {
-      color: white;
+    .line2 p {
       margin-top: 5px;
-      border-radius: 20px;
+      color: white;
     }
 
-    .line2 > button:hover p {
-      background-color: orange;
+    .line2 button:hover p {
+      background: orange;
       color: black;
+      border-radius: 10px;
     }
 
-    .stline {
+    hr.stline {
       border: none;
       height: 3px;
       background: orange;
-      margin: 20px auto;
-      width: 80%; /* ✅ not full width */
+      margin: 30px auto;
+      width: 80%;
     }
 
-    .navigation {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
-
-    .navigation > button {
-      padding: 10px 20px;
-      border-radius: 20px;
-      background-color: transparent;
-      color: aliceblue;
-      cursor: pointer;
-    }
-
-    .navigation > button:hover {
-      transform: scale(1.05);
-      background-color: orange;
-      color: black;
-      box-shadow: 0 0 20px 8px white;
-    }
-
-    /* ✅ Media Queries */
-    @media (max-width: 768px) {
-      #div1 {
-        height: auto;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-      }
-      .upper {
-        justify-content: center;
-      }
-      h2 {
-        font-size: 1.2rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .line2 {
-        flex-direction: column; /* ✅ stack buttons */
-        align-items: center;
-      }
-      .line2 > button {
-        width: 80%; /* ✅ fill most of mobile width */
-      }
-      input {
-        width: 100%; /* ✅ search full width */
-      }
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <div id="div1">
-    <a id="logo">TARUN'S all in one zone.in</a>
-    <div class="upper">
-      <a>Account</a>
-      <a>MyAPPS</a>
-      <a>Contact Us</a>
+  <header>
+    <h1>TARUN'S All in One Zone</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="page1.html">Social Media Apps</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+      </ul>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button>SEARCH</button>
     </div>
-    <input placeholder="Search">
-    <div class="search"><button>SEARCH</button></div>
-  </div>
+  </header>
 
-  <h2 class="stream">STREAMING APPS</h2>
+  <main>
+    <section>
+      <h2>Streaming Apps</h2>
+      <div class="line2">
+        <button onclick="window.open('https://www.youtube.com','_blank')">
+          <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png">
+          <p><b>YOUTUBE</b></p>
+        </button>
+        <button onclick="window.open('https://www.netflix.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+          <p><b>NETFLIX</b></p>
+        </button>
+        <button onclick="window.open('https://www.primevideo.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Prime_Video_logo_%282024%29.svg">
+          <p><b>PRIME VIDEO</b></p>
+        </button>
+        <button onclick="window.open('https://www.sonyliv.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/SonyLIV_2020.png">
+          <p><b>SONY LIV</b></p>
+        </button>
+      </div>
+    </section>
 
-  <div class="line2">
-    <button onclick="window.open('https://www.youtube.com','_blank')">
-      <img src="https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png">
-      <p><b>YOUTUBE</b></p>
-    </button>
-    <button onclick="window.open('https://www.netflix.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
-      <p><b>NETFLIX</b></p>
-    </button>
-    <button onclick="window.open('https://www.primevideo.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Prime_Video_logo_%282024%29.svg">
-      <p><b>PRIME VIDEO</b></p>
-    </button>
-    <button onclick="window.open('https://www.sonyliv.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/SonyLIV_2020.png">
-      <p><b>SONY LIV</b></p>
-    </button>
-  </div>
+    <hr class="stline">
 
-  <hr class="stline">
+    <section>
+      <div class="line2">
+        <button onclick="window.open('https://www.zee5.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Zee5-official-logo.jpeg">
+          <p><b>ZEE5</b></p>
+        </button>
+        <button onclick="window.open('https://www.hotstar.com','_blank')">
+          <img src="https://github.com/Tarun123git/logo/blob/main/56097ad6-88b3-471f-8106-a29e9d0e4462.png?raw=true">
+          <p><b>Disney+ Hotstar</b></p>
+        </button>
+        <button onclick="window.open('https://www.erosnow.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/ErosNow_Stag_New_18_White.jpg">
+          <p><b>EROS NOW</b></p>
+        </button>
+        <button onclick="window.open('https://www.sunnxt.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Sun_NXT_logo_small.png">
+          <p><b>SUN NXT</b></p>
+        </button>
+      </div>
+    </section>
 
-  <div class="line2">
-    <button onclick="window.open('https://www.zee5.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Zee5-official-logo.jpeg">
-      <p><b>ZEE5</b></p>
-    </button>
-    <button onclick="window.open('https://www.jiohotstar.com','_blank')">
-      <img src="https://github.com/Tarun123git/logo/blob/main/56097ad6-88b3-471f-8106-a29e9d0e4462.png?raw=true">
-      <p><b>JIO Hotstar</b></p>
-    </button>
-    <button onclick="window.open('https://www.erosnow.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/ErosNow_Stag_New_18_White.jpg">
-      <p><b>EROS NOW</b></p>
-    </button>
-    <button onclick="window.open('https://www.sunnxt.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Sun_NXT_logo_small.png">
-      <p><b>SUN NXT</b></p>
-    </button>
-  </div>
+    <hr class="stline">
 
-  <hr class="stline">
+    <section>
+      <div class="line2">
+        <button onclick="window.open('https://www.mxplayer.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Final_logo_of_app.jpg">
+          <p><b>MX PLAYER</b></p>
+        </button>
+        <button onclick="window.open('https://www.crunchyroll.com','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Crunchyroll_2024_stacked.svg">
+          <p><b>CRUNCHYROLL</b></p>
+        </button>
+        <button onclick="window.open('https://tv.apple.com/in','_blank')">
+          <img src="https://github.com/Tarun123git/logo/blob/main/ChatGPT%20Image%20Jul%2028,%202025,%2005_43_40%20PM.png?raw=true">
+          <p><b>APPLE TV+</b></p>
+        </button>
+        <button onclick="window.open('https://www.aha.video','_blank')">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Aha_%28streaming_service.svg">
+          <p><b>AHA</b></p>
+        </button>
+      </div>
+    </section>
+  </main>
 
-  <div class="line2">
-    <button onclick="window.open('https://www.mxplayer.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Final_logo_of_app.jpg">
-      <p><b>MX Player</b></p>
-    </button>
-    <button onclick="window.open('https://www.crunchyroll.com','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Crunchyroll_2024_stacked.svg">
-      <p><b>CRUNCHYROLL</b></p>
-    </button>
-    <button onclick="window.open('https://tv.apple.com/in','_blank')">
-      <img src="https://github.com/Tarun123git/logo/blob/main/ChatGPT%20Image%20Jul%2028,%202025,%2005_43_40%20PM.png?raw=true">
-      <p><b>Apple TV+</b></p>
-    </button>
-    <button onclick="window.open('https://www.aha.video','_blank')">
-      <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Aha_%28streaming_service.svg">
-      <p><b>AHA</b></p>
-    </button>
-  </div>
-
-  <div class="navigation">
-    <button onclick="window.open('https://tarun123git.github.io/website/page1.html','_blank')">
-      <b><i>SOCIAL MEDIA APPS</i></b>
-    </button>
-  </div>
+  <footer>
+    <p>&copy; 2025 Tarun's All in One Zone | Built with HTML & CSS</p>
+  </footer>
 </body>
 </html>
