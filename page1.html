@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +25,11 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 20px;
-      flex-wrap: wrap; /* makes header responsive */
+      flex-wrap: wrap;
+      /* makes header responsive */
     }
 
-    #logo > button {
+    #logo>button {
       color: orange;
       font-size: 20px;
       background: none;
@@ -108,7 +110,7 @@
       padding: 0 20px;
     }
 
-    .line2 > button {
+    .line2>button {
       padding: 15px;
       text-align: center;
       border-radius: 10px;
@@ -117,31 +119,31 @@
       transition: 0.3s ease;
     }
 
-    .line2 > button:hover {
+    .line2>button:hover {
       box-shadow: 0 0 20px 8px orange;
       background-color: rgba(255, 165, 0, 0.1);
       transform: scale(1.05);
     }
 
-    .line2 > button img {
+    .line2>button img {
       height: 60px;
       width: auto;
       object-fit: contain;
       transition: 0.3s ease;
     }
 
-    .line2 > button:hover img {
+    .line2>button:hover img {
       transform: scale(1.2);
     }
 
-    .line2 > button p {
+    .line2>button p {
       color: white;
       margin-top: 10px;
       font-weight: bold;
       transition: 0.3s ease;
     }
 
-    .line2 > button:hover p {
+    .line2>button:hover p {
       color: orange;
       transform: scale(1.05);
     }
@@ -168,19 +170,21 @@
 
     @media (max-width: 480px) {
       .line2 {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row on small screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row on small screens */
       }
 
-      .line2 > button img {
+      .line2>button img {
         height: 50px;
       }
 
-      .line2 > button p {
+      .line2>button p {
         font-size: 12px;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Header -->
@@ -202,29 +206,66 @@
   <!-- Social Media Apps -->
   <h2>SOCIAL MEDIA APPS</h2>
   <div class="line2">
-    <button onclick="window.open('https://www.instagram.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="instagram"><p>INSTAGRAM</p></button>
-    <button onclick="window.open('https://www.facebook.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="facebook"><p>FACEBOOK</p></button>
-    <button onclick="window.open('https://www.twitter.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-twitter-48.png?raw=true" alt="twitter"><p>TWITTER</p></button>
-    <button onclick="window.open('https://www.whatsapp.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp"><p>WHATSAPP</p></button>
+    <button onclick="window.open('https://www.instagram.com', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="instagram">
+      <p>INSTAGRAM</p>
+    </button>
+    <button onclick="window.open('https://www.facebook.com', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook_icon_2013.svg" alt="facebook">
+      <p>FACEBOOK</p>
+    </button>
+    <button onclick="window.open('https://www.twitter.com', '_blank')"><img
+        src="https://github.com/Tarun123git/logo/blob/main/icons8-twitter-48.png?raw=true" alt="twitter">
+      <p>TWITTER</p>
+    </button>
+    <button onclick="window.open('https://www.whatsapp.com', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="whatsapp">
+      <p>WHATSAPP</p>
+    </button>
   </div>
 
   <hr class="stline">
 
   <div class="line2">
-    <button onclick="window.open('https://www.snapchat.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg" alt="snapchat"><p>SNAPCHAT</p></button>
-    <button onclick="window.open('https://telegram.org', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="telegram"><p>TELEGRAM</p></button>
-    <button onclick="window.open('https://www.threads.net', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Threads_%28app%29.svg" alt="threads"><p>THREADS</p></button>
-    <button onclick="window.open('https://www.linkedin.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin"><p>LINKEDIN</p></button>
+    <button onclick="window.open('https://www.snapchat.com', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg" alt="snapchat">
+      <p>SNAPCHAT</p>
+    </button>
+    <button onclick="window.open('https://telegram.org', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="telegram">
+      <p>TELEGRAM</p>
+    </button>
+    <button onclick="window.open('https://www.threads.net', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/01/Threads_%28app%29.svg" alt="threads">
+      <p>THREADS</p>
+    </button>
+    <button onclick="window.open('https://www.linkedin.com', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="linkedin">
+      <p>LINKEDIN</p>
+    </button>
   </div>
 
   <hr class="stline">
 
   <div class="line2">
-    <button onclick="window.open('https://www.pinterest.com', '_blank')"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="pinterest"><p>PINTEREST</p></button>
-    <button onclick="window.open('https://www.reddit.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-reddit-48.png?raw=true" alt="reddit"><p>REDDIT</p></button>
-    <button onclick="window.open('https://discord.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-discord-48.png?raw=true" alt="discord"><p>DISCORD</p></button>
-    <button onclick="window.open('https://www.quora.com', '_blank')"><img src="https://github.com/Tarun123git/logo/blob/main/icons8-quora-48.png?raw=true" alt="quora"><p>QUORA</p></button>
+    <button onclick="window.open('https://www.pinterest.com', '_blank')"><img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="pinterest">
+      <p>PINTEREST</p>
+    </button>
+    <button onclick="window.open('https://www.reddit.com', '_blank')"><img
+        src="https://github.com/Tarun123git/logo/blob/main/icons8-reddit-48.png?raw=true" alt="reddit">
+      <p>REDDIT</p>
+    </button>
+    <button onclick="window.open('https://discord.com', '_blank')"><img
+        src="https://github.com/Tarun123git/logo/blob/main/icons8-discord-48.png?raw=true" alt="discord">
+      <p>DISCORD</p>
+    </button>
+    <button onclick="window.open('https://www.quora.com', '_blank')"><img
+        src="https://github.com/Tarun123git/logo/blob/main/icons8-quora-48.png?raw=true" alt="quora">
+      <p>QUORA</p>
+    </button>
   </div>
 
 </body>
+
 </html>
